@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{
+printf("加油！我一定可以学好C语言的\n");
+return 0;
+}

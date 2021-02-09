@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{
+ptintf("wuyu1!\n");
+return 0;
+}

@@ -1,0 +1,6 @@
+#include<stdio.h>
+int maain()
+{
+printf("haolan\n");
+return 0;
+}

@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{
+printf("jiu \n");
+return 0;
+}

@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{
+primtf("9i\n");
+return 0;
+}

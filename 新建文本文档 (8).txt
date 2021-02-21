@@ -1,0 +1,6 @@
+#include<stdio.h>
+int maain()
+{
+printf("˧\n");
+return 0;
+}

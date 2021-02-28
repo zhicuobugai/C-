@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main()
+{
+printf("°Ñ¼á³Ö\n");
+return 0;
+}

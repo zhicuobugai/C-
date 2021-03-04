@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+  int n;
+  //sum1不要定义成全局变量，否则出错
+  int sum = 0;
+  scanf("%d",&n);
+  
+  for(int x=1;x<=n;x++)
+  {
+    int sum1 = 1;//定义在此处
+    for(int i=1;i<=x;i++)
+    {
+      sum1 = sum1 * i; 
+    }
+    sum =sum +  sum1;
+  }
+  printf("%d\n",sum);
+  
+  return 0;
+}

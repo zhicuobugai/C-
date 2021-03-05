@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int M,N,q,w;
+    int g,s,b;
+    scanf("%d%d",&M,&N);
+    q=M;
+    w=N;
+        if(M<=N&&M>=100&&N>=100&&N<=999)//判断输入数字是否合法
+        {
+            for(q;q<=w;q++)
+            {
+                g=q%10;
+                s=q%100/10;
+                b=q/100;//取得输入数字的个十百位
+                if(q==pow(g,3)+pow(s,3)+pow(b,3))//判断是否为水仙花数
+                {
+                    printf("%d\n",q);//如果是则输出
+                }
+            }
+        }
+        else//不合法的输入
+        { 
+            printf("Invalid Value.");
+        }
+        return 0;
+}

@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main ()
+{
+	int N,i,grade,cnt=0 ;
+	int sum=0;
+	double average=0;
+	scanf("%d",&N);
+	if(N==0) {
+		average=0;
+		cnt=0;
+	}else {
+		for(i=1;i<=N;i++){
+			scanf("%d",&grade);
+			if(grade>=60) {
+				cnt++;
+			}
+		sum=sum+grade;
+	} 
+		average=1.0*sum/N;
+	}
+		//printf("average = %.1f\ncount = %d",average,cnt);不能这么写 换行无效 
+		printf("average = %.1f\n",average);
+		printf("count = %d",cnt);
+	return 0;
+}

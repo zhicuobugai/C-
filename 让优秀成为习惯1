@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+    char a[8];
+    fgets(a,8,stdin);
+    printf("Hello %s", a);
+}

@@ -1,0 +1,17 @@
+#include <stdio.h> 
+main()
+{	
+    int k,sum=0,a[10],average,min=100;
+	for(k=0;k<10;k++)
+	scanf("%d",&a[k]);
+	for(k=0;k<10;k++){
+       sum+=a[k]; 
+       if(a[k]<min){
+           min=a[k];
+       }
+    }
+    average=sum/10;
+	printf("average=%d\n",average);
+    printf("min=%d",min);
+    return 0;
+}

@@ -1,0 +1,8 @@
+void findmax( int *px, int *py, int *pmax ){
+    if (*px > *py){
+        *pmax = *px;//交换
+    } 
+    else if(*py > *px){
+        *pmax = *py;//交换
+    } 
+}

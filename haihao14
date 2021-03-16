@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int f=1,n=1;
+    double pi=0.0,term=1.0;
+    while(fabs(term)>0.000001)
+    {
+        term=f*1.0/n;
+        pi=pi+term;
+        n+=2;
+        f=-f;
+    }
+    pi=pi*4;
+    printf("pi=%10.4f",pi);
+}

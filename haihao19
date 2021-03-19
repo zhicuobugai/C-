@@ -1,0 +1,29 @@
+#include<stdio.h>
+int fun(char *p,char *q)
+{
+   while(*p==*q&&*p!='\0'&&*q!='\0')
+{   
+p++;
+q++;
+}
+    return *p-*q;
+}
+void main()
+{
+char*ps[5]={"java","basic","fortran","pascal"," c" },*temp;
+int i,j;
+printf("sorting before is:\n");
+for(i=0;i<5;i++)
+printf("%10s",ps[i]);
+printf("\n");
+        for(i=0;i<4;i++)
+  for(j=i+1;j<5;j++)
+     if(fun(ps[i],ps[j])>0)
+     {
+        temp=ps[i];ps[i]=ps[j];ps[j]=temp;
+}
+         printf("the sort result is:\n");
+for(i=0;i<5;i++)
+   printf("%10s",ps[i]);
+printf("\n");
+}

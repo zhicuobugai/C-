@@ -1,0 +1,26 @@
+#include<stdio.h>
+#define M 50
+void main( )
+{
+	int a[M],n=M ,i ,*p,count=0;
+    p=a;
+    for(i=0;i<M;i++)
+       a[i]=i+1;    //编号    
+    while(n>1)
+    { 
+		if(p>&a[M-1])	p=&a[0];   //使数组首尾相接
+        if(*p!=0) 
+		{
+			count++;
+			if(count==3)
+			{
+   				*p=0;
+    			count=0;
+    			n--;   
+			}
+        }
+        p++;            
+	}
+	for(i=0,p=a;i<M;i++,p++)
+	 	 if(*p!=0)	printf("大王是%d号猴子\n",*p);	 
+}

@@ -1,0 +1,14 @@
+#include<stdio.h>
+     void main()
+     {
+        int num=0,i;
+        char c[100],*ps=c;
+        gets(c);
+        while(*ps!='\0')
+        { 
+           if(*ps==' '&&*(ps+1)!=' ')  num++;
+           ps++;
+}
+num++;
+printf("Input words amount is %d\n",num);
+}

@@ -1,0 +1,16 @@
+inline void swap(unsigned char * x, unsigned char * y)
+{
+	*x += *y;
+	*y = *x - *y;
+	*x = *x - *y;
+}
+
+char * strReverse(char * str)
+{
+	char * start = str;
+	char * end = str + strlen(str) - 1;
+	while(start < end) 
+		swap((unsigned char *)start ++, (unsigned char *)end --); //对称交换头和尾
+
+	return str;
+}

@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main()
+{
+   int a,b;
+   printf("请依次输入长方形长和宽\n");
+   scanf("%d%d",&a,&b);
+   printf("该长方形的周长是%d。\n该长方形的面积是%d\n",(a+b)*2,a*b);
+   return 0;
+}

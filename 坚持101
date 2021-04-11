@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float r;
+    float N=3.14;
+    float s;
+    //N*r*r;该行必须在输入r值以后
+    printf("请输入该圆的半径:");
+    scanf("%f",&r);
+        s=N*r*r;
+    printf("%.7f",s);//输出小数点后7位
+    return 0;
+}
